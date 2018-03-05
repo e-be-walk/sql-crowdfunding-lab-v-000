@@ -29,7 +29,7 @@ HAVING SUM(pledges.amount)-projects.funding_goal >=0;"
 end
 
 def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_them_by_the_amount_and_users_name
-"SELECT users_names, SUM(pledges.amounts) FROM users
+"SELECT users.names, SUM(pledges.amounts) FROM users
 JOIN pledges
 ON pledges.user_id = users.id
 GROUP BY users.name;
