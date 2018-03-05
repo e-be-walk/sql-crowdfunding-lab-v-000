@@ -1,63 +1,48 @@
-INSERT INTO users (name, age) VALUES ("Brenda", 45);
-INSERT INTO users (name, age) VALUES ("Josh", 19);
-INSERT INTO users (name, age) VALUES ("Samuel", 63);
-INSERT INTO users (name, age) VALUES ("Catherine", 47);
-INSERT INTO users (name, age) VALUES ("Victoria", 62);
-INSERT INTO users (name, age) VALUES ("George", 23);
-INSERT INTO users (name, age) VALUES ("Geoff", 37);
-INSERT INTO users (name, age) VALUES ("Erin", 32);
-INSERT INTO users (name, age) VALUES ("Cara", 36);
-INSERT INTO users (name, age) VALUES ("Kerstin", 28);
-INSERT INTO users (name, age) VALUES ("David", 30);
-INSERT INTO users (name, age) VALUES ("Hannah", 27);
-INSERT INTO users (name, age) VALUES ("Jane", 40);
-INSERT INTO users (name, age) VALUES ("Jordan", 16);
-INSERT INTO users (name, age) VALUES ("Byron", 34);
-INSERT INTO users (name, age) VALUES ("Anita", 26);
-INSERT INTO users (name, age) VALUES ("Carol", 60);
-INSERT INTO users (name, age) VALUES ("Josie", 54);
-INSERT INTO users (name, age) VALUES ("Mike", 63);
-INSERT INTO users (name, age) VALUES ("Sue", 63);
+INSERT INTO users (id, name, age) VALUES (1, 'Finnebar', 17), (2, 'Bear', 6), (3, 'Iguana', 4), (4, 'Alex', 33),
+(5, 'Amanda', 24), (6, 'Sophie', 24), (7, 'Rosey', 9), (8, 'Victoria', 23), (9, 'Franz', 100), (10, 'Hermione', 30),
+(11, 'Voldemort', 90), (12, 'Marisa', 24), (13, 'Swizzle', 4), (14, 'Sirius', 36), (15, 'Albus', 113), (16, 'Squid', 5),
+(17, 'Whale', 6), (18, 'Pacha', 5), (19, 'Ena', 24), (20, 'Katie', 24);
 
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Dogpatch Urban Gardens", "Farms", 15000, "February 25", "March 25" );
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Buildthemill Continues- Restoring Tartan", "Weaving", 55202, "February 9","March 9");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Gruff: Mutant Goat Enamel Pins", "Accessories", 500, "February 9","March 9");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("BRINS Jam & Marmalade Relaunch! (Formerly known as STAGG)", "Small Batch", 6000, "February 22", "March 22");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Kitsune, Japanese restaurant in Williamsburg, Brooklyn", "Restaurants", 90000, "February 19", "March 19");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Study Woodworking in Japan!", "Woodworking", 28368, "February 15", "March 15");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("CEYLOVE: From Sri Lanka With Spice", "Food", 2500, "February 16", "March 16");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Primal Supply Meats Butcher Shop", "Spaces", 3500, "February 4", "March 4");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("ARAMLEE | Convertible Leather Handbags", "Accessories", 20000, "February 22", "March 22");
-INSERT INTO projects (title, category, funding_goal, start_date, end_date) VALUES ("Orbasics - a better way to dress your kids", "Childrenswear", 18477, "February 16", "March 16");
+INSERT INTO projects (id, title, category, funding_goal, start_date, end_date) VALUES 
+(1, 'Help me buy a guitar', 'music', 500.00, '2013-06-30', '2013-07-30'),
+(2, 'My book on SQL', 'books', 20.00, '2013-01-01', '2014-01-01'),
+(3, 'The next Harry Potter', 'books', 1000.00, '2013-05-30', '2015-05-30'),
+(4, 'Animal shelter needs dog food', 'charity', 400.00, '2013-03-14', '2013-06-30'),
+(5, 'Voldement needs a body', 'charity', 6000.00, '2013-03-20', '2013-09-20'),
+(6, 'The next Inna-Gadda-Davida', 'music', 200.00, '2014-12-30', '2015-12-30'),
+(7, 'Iguana needs tail operation', 'charity', 2000.00, '2013-10-02', '2013-10-30'),
+(8, 'I have bed bugs!', 'charity', 800.00, '2014-06-30', '2014-06-31'),
+(9, 'I want to teach English in China', 'charity', 3000.00, '2013-06-30', '2013-09-30'),
+(10, 'Help save birds of paradise', 'charity', 5000.00, '2012-03-20', '2013-06-30');
 
-
-INSERT INTO pledges (amount, user_id, project_id) VALUES (500, 5, 8);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (20, 3, 9);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (75, 17, 4);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (50, 12, 3);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (164, 16, 6);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (195, 4, 1);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (187, 3, 10);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (900, 16, 9);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (345, 18, 8);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (674, 11, 5);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (112, 5, 3);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (905, 1, 1);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (1000, 14, 7);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (1000, 15, 8);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (2000, 16, 9);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (100, 17, 10);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (932, 18, 4);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (673, 19, 1);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (892, 20, 10);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (650, 1, 9);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (703, 2, 8);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (60, 3, 7);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (654, 4, 6);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (873, 5, 5);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (3672, 6, 4);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (900, 7, 3);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (340, 8, 2);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (643, 9, 1);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (880, 10, 10);
-INSERT INTO pledges (amount, user_id, project_id) VALUES (640, 11, 9);
+INSERT INTO pledges (id, amount, user_id, project_id) VALUES 
+(1, 10.00, 1, 2),
+(2, 20.00, 1, 3),
+(3, 40.00, 1, 4),
+(4, 50.00, 2, 3),
+(5, 10.00, 3, 2),
+(6, 20.00, 4, 4),
+(7, 40.00, 5, 10),
+(8, 60.00, 6, 10),
+(9, 50.00, 7, 9),
+(10, 700.00, 8, 8),
+(11, 1000.00, 8, 7),
+(12, 40.00, 9, 6),
+(13, 50.00, 9, 3),
+(14, 50.00, 10, 4),
+(15, 24.00, 12, 1),
+(16, 34.00, 11, 1),
+(17, 12.00, 13, 6),
+(18, 19.00, 14, 5),
+(19, 20.00, 15, 5),
+(20, 40.00, 16, 6),
+(21, 35.50, 17, 7),
+(22, 40.00, 18, 8),
+(23, 60.00, 19, 9),
+(24, 70.00, 20, 10),
+(25, 100.00, 20, 4),
+(26, 40.00, 19, 1),
+(27, 20.00, 18, 6),
+(28, 90.00, 17, 9),
+(29, 230.00, 16, 6),
+(30, 450.00, 15, 5);
